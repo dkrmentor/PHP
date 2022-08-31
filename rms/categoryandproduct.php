@@ -120,7 +120,7 @@ function getAllProducts($product_page)
     }
     else{
    
-      $rms_img_url = "https://s3.amazonaws.com/current-rms/45617a00-7a48-0134-0f49-0a9ca217e95b/icons/166/original/Ameda_Hygienikit_Milk_Collection_System.jpg"
+      $rms_img_url = "http://skytoddler.tk/wp-content/uploads/2022/08/1.png"
       ;
     }
     

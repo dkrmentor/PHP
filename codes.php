@@ -13,8 +13,7 @@ add_action('init', 'myStartSession', 1);
     }
 
 
-
-//logout redirection
+// //logout redirection
 add_action('wp_logout','auto_redirect_after_logout');
 
 function auto_redirect_after_logout(){
@@ -95,6 +94,17 @@ function wc_change_uae_currency_symbol( $currency_symbol, $currency ) {
 	return $currency_symbol;
 }
 
+
+
+
+//change text
+add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
+    if ( 'Read more' == $text ) {
+        $text = __( 'Buy Now', 'woocommerce' );
+    }
+
+    return $text;
+} );
 
 
 
